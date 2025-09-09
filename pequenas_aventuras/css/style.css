@@ -1,0 +1,180 @@
+/* ====== RESET BÁSICO ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f7fff7;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* ====== NAVBAR ====== */
+
+/* Logo maior/diferente dentro da navbar */
+.custom-navbar .navbar-brand img {
+    width: 100px;
+    height: auto;
+}
+
+.custom-navbar {
+    background-color: #4ecdc4;
+    padding: 4px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ff6b6b !important;
+}
+
+.brand-text {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* ====== TOY CARDS IMAGENS UNIFORMES ====== */
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+/* ====== HERO ====== */
+.hero-section {
+    background: linear-gradient(135deg, #4ecdc4, #ff6b6b);
+    color: #fff;
+    padding: 250px 0;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-title .highlight {
+    color: #f7fff7;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero-buttons .btn-primary {
+    background-color: #ff6b6b;
+    border: none;
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: #e55b5b;
+}
+
+.hero-buttons .btn-outline-light:hover {
+    background-color: #fff;
+    color: #4ecdc4 !important;
+}
+
+/* ====== SEÇÕES ====== */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4ecdc4;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+/* ====== FEATURE CARDS ====== */
+.feature-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #ff6b6b;
+    margin-bottom: 15px;
+}
+
+/* ====== CONTACT ====== */
+.contact-info {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: #4ecdc4;
+    margin-bottom: 10px;
+}
+
+#contactForm .btn-primary {
+    background-color: #4ecdc4;
+    border: none;
+}
+
+#contactForm .btn-primary:hover {
+    background-color: #3bb4a9;
+}
+
+/* ====== FOOTER ====== */
+.footer-section {
+    background-color: #4ecdc4;
+    color: #fff;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.footer-text {
+    margin: 0;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

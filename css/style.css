@@ -210,36 +210,61 @@ body {
     color: #25D366;
 }
 
-/* ====== BENEFITS SECTION ====== */
-.benefits-section {
-    background-color: #f0f9f7;
-    /* tom suave para destacar da seção de brinquedos */
-}
+/* ====== BENEFITS CARDS UNIFORMES ====== */
 
-.benefits-section .feature-card {
-    padding: 25px 20px;
-}
-
-.benefits-section .feature-icon {
-    font-size: 2.5rem;
-    color: #4ecdc4;
-    margin-bottom: 15px;
-}
-
-/* Força todos os cards dentro da seção de benefícios a terem a mesma altura */
+/* Container da linha de cards */
 .benefits-section .row.g-4 {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.0rem;
+    gap: 1rem;
+    /* espaçamento entre os cards */
+    justify-content: center;
+    /* centraliza os cards */
 }
 
+/* Colunas com cards */
+.benefits-section .col-md-4 {
+    flex: 0 1 30%;
+    /* cada card ocupa ~30% da linha */
+    min-width: 250px;
+    /* impede que encolham demais em telas menores */
+}
+
+/* Cards dentro das colunas */
 .benefits-section .feature-card {
-    flex: 1 1 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* mantém o conteúdo no topo */
     height: 100%;
+    /* força altura uniforme */
+    padding: 20px;
+    /* opcional: reduz padding para caber melhor */
+}
+
+/* Força todos os cards da seção "Sobre" a terem a mesma altura e caber lado a lado */
+.about-section .row.mt-5 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* espaçamento entre os cards */
+    justify-content: center;
+    /* centraliza os cards na linha */
+}
+
+.about-section .col-md-4 {
+    flex: 0 1 30%;
+    /* cada card ocupa cerca de 30% da largura */
+    min-width: 250px;
+    /* garante que não fique muito estreito em telas menores */
+}
+
+.about-section .feature-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 20px;
+    /* reduz um pouco o padding para caber melhor */
 }
 
 /* ====== RESPONSIVIDADE ====== */
